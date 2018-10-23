@@ -1,9 +1,9 @@
 import tweepy
 import requests
-consumer_key = ""
-consumer_secret = ""
-access_token = ""
-access_token_secret = ""
+consumer_key = os.environ.get(consuner_key) 
+consumer_secret = os.environ.get(consuner_secret) 
+access_token = os.environ.get(access_token) 
+access_token_secret = os.environ.get(access_token_secret)
 
 auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
